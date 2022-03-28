@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -24,17 +24,17 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <nav class="navbar">
-      <img
-        class="navbar__logo"
-        src="./images/logo.svg"
-        alt="image showing the text-based site logo huddle"
-      />
-      <a class="btn btn-cta" href="#">Try it Free</a>
-    </nav>
-    <main>
-      <div>
-        <div class="hero-grid">
+    <header class="header__container">
+      <nav class="navbar">
+        <img
+          class="navbar__logo"
+          src="./images/logo.svg"
+          alt="image showing the text-based site logo huddle"
+        />
+        <a class="btn btn-cta" href="#">Try it Free</a>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero__content">
           <h1 class="hero__heading">Build The Community Your Fans Will Love</h1>
           <p class="hero__description">
             Huddle re-imagines the way we build communities. You have a voice,
@@ -43,23 +43,110 @@
           </p>
           <a class="btn btn-get-started" href="#">Get Started For Free</a>
         </div>
-        <img
-          class="hero__img"
-          src="./images/illustration-mockups.svg"
-          alt="image showing an illustration mockup"
-        />
+        <div>
+          <img
+            class="hero__img"
+            src="./images/illustration-mockups.svg"
+            alt="image showing an illustration mockup"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="grid-container">
+        <div class="grid">
+          <h1 class="grid__title">Grow Together</h1>
+          <p class="grid__description">
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+        <div>
+          <img src="./images/illustration-grow-together.svg" alt="" />
+        </div>
+      </div>
+      <div class="grid-container position-left">
+        <div class="grid">
+          <h1 class="grid__title">Flowing Conversations</h1>
+          <p class="grid__description">
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
+        <div>
+          <img src="./images/illustration-flowing-conversation.svg" alt="" />
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid">
+          <h1 class="grid__title">Your Users</h1>
+          <p class="grid__description">
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+        <div>
+          <img src="./images/illustration-your-users.svg" alt="" />
+        </div>
+      </div>
+      <div class="popup-box">
+        <h1>Ready To Build Your Community?</h1>
+        <a class="btn btn-get-started" href="#">Get Started For Free</a>
       </div>
     </main>
-    Generate meaningful discussions with your audience and build a strong, loyal
-    community. Think of the insightful conversations you miss out on with a
-    feedback form. Flowing Conversations You wouldn't paginate a conversation in
-    real life, so why do it online? Our threads have just-in-time loading for a
-    more natural flow. Your Users It takes no time at all to integrate Huddle
-    with your app's authentication solution. This means, once signed in to your
-    app, your users can start chatting immediately. Ready To Build Your
-    Community? Get Started For Free Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua +1-543-123-4567 example@huddle.com About Us What We Do FAQ Career
-    Blog Contact Us &copy; Copyright 2018 Huddle. All rights reserved.
+    <footer>
+      <img src="./images/logo.svg" alt="" 0 />
+      <div class="footer-item">
+        <div>
+          <img src="./images/icon-location.svg" />
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+      </div>
+      <div class="footer-item">
+        <div>
+          <img src="./images/icon-phone.svg" />
+        </div>
+        <div>
+          <p>
+          +1-543-123-4567
+          </p>
+        </div>
+      </div>
+      <div class="footer-item">
+        <div>
+          <img src="./images/icon-email.svg" />
+        </div>
+        <div>
+          <p>
+         example@huddle.com
+          </p>
+        </div>
+      </div>
+      <div class="footer__links">
+        <small>About Us</small>
+        <small> What We Do</small>
+        <small>FAQ</small>
+      </div>
+      <div class="footer__links">
+        <small>Career</small>
+        <small>Blog</small>
+        <small>Contact Us</small>
+      </div>
+      <div class="footer__social-media">
+       <ion-icon name="logo-facebook"></ion-icon>
+       <ion-icon name="logo-twitter"></ion-icon>
+       <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+    </footer>
+     <h5 class="footer-copyright">&copy; Copyright 2018 Huddle. All rights reserved.</h5>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </body>
 </html>

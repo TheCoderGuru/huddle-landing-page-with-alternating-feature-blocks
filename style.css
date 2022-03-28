@@ -1,57 +1,102 @@
-:root{
-    
---pink: hsl(322, 100%, 66%);
---very-pale-cyan: hsl(193, 100%, 96%);
---very-dark-cyan: hsl(192, 100%, 9%);
---grayish-blue: hsl(208, 11%, 55%);
---font-body: 18px;
---font-semibold: 600;
---font-bold:700;
---font-regular: 400;
---font-poppins: 'Poppins', sans-serif;
---font-os: 'Open Sans', sans-serif;
-
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --font-body: 18px;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-regular: 400;
+  --font-poppins: "Poppins", sans-serif;
+  --font-os: "Open Sans", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.navbar{
-    position: relative;
+.header__container {
+  background-color: var(--very-pale-cyan);
+  z-index: -1;
+  background-image: url(./images/bg-hero-desktop.svg);
 }
 
-
-.navbar__logo{
-    margin: 2rem;
-    height: 1.5rem;
+.navbar {
+  position: relative;
 }
 
-.btn-cta{
-    right: 0;
-    top: 1.5rem;
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    color: var(--very-dark-cyan);
-    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
-    border-radius: 1rem;
-    font-size: .8rem;
-    padding: .5rem;
-    padding-left: 5rem;
+.navbar__logo {
+  /* top | right | bottom | left */
+  margin: 2rem 0 0 3rem; 
+  height: 1.5rem;
 }
 
-.btn{
-    text-decoration: none;
-    padding-inline: 1rem;
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
+  position: relative;
 }
 
-.btn-get-started{
-    background-color: var(--pink);
+.hero__content {
+  font-family: var(--font-poppins);
+  margin-left: 3rem;
+  margin-top: 5rem;
 }
 
-.hero-grid{
-    grid-template-columns: repeat(2, 1fr);
+.hero__heading {
+  width: 46%;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero__description {
+  margin-bottom: 3rem;
+  width: 56%;
+  font-weight: 500;
+  color: var(--very-dark-cyan);
+  font-family: var(--font-os);
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn-get-started {
+  background-color: var(--pink);
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  border-radius: 2rem;
+  font-size: .8rem;
+  font-family: var(--font-os);
+  font-weight: 700;
+  color: white;
+}
+
+.btn-cta {
+  right: 3rem;
+  top: 1.5rem;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--font-bold);
+  color: var(--very-dark-cyan);
+  box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  background-color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero__img{
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  height: 32rem;
+
 }
