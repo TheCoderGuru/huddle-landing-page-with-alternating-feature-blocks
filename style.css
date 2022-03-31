@@ -138,5 +138,24 @@
   width: 64%;
   font-weight: 400;
   color: var(--grayish-blue);
+}
 
+.popup-box{
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px black;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 4em;
+  box-shadow: -2px 2px 9px -3px rgba(0,0,0,0.75);
+}
+
+.popup-box__title{
+  font-family: var(--font-poppins);
+  margin-bottom: 2em;
+}
+
+footer{
+  background-color: var(--very-dark-cyan);
 }
