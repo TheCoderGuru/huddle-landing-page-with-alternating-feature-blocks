@@ -162,6 +162,7 @@ footer{
   background-color: var(--very-dark-cyan);
   position: absolute;
     z-index: -1;
+    padding: 2em;
 }
 
 footer img{
@@ -177,12 +178,14 @@ footer img{
 .footer-item-number,
 .footer-item-email{
   color: white;
+    font-size: .9em;
   font-family: var(--font-os);
 }
 
 .footer-item-paragraph{
-  width: 41%;
+  width: 89%;
   margin-bottom: 1em;
+  color: white;
 }
 
 .footer-item-number{
@@ -195,20 +198,46 @@ footer img{
 
 .footer__links{
   display: flex;
+  font-size: 1.1em;
   flex-direction: column;
 }
 
 .footer__grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
 }
 
 .footer__links{
   color: white;
+  font-family: var(--font-os);
+  gap: 1em;
+  margin-top: 4em;
 }
 
 .footer-copyright{
   text-align: right;
   color: white;
+  font-weight: 400;
+  margin-right: 4em;
   font-family: var(--font-os);
+}
+
+
+.footer__social-media{
+  margin-top: 4.3em;
+}
+.footer__social-media ion-icon{
+  border: 1px solid currentColor;
+  color: white;
+  margin-right: 2em;
+  opacity: .7;
+  border-radius: 50%;
+  padding: .3em;
+}
+
+@media screen and ( max-width: 600px ){
+  .hero__heading{
+    width: 100%;
+  }
 }
