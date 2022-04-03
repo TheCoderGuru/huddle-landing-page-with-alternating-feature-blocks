@@ -238,6 +238,25 @@ footer img{
 
 @media screen and ( max-width: 600px ){
   .hero__heading{
-    width: 100%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero__img{
+    height: 28rem;
+    margin-inline: 3em;
+  }
+
+  .hero__description{
+    text-align: center;
+    margin-inline: 3em;
+  }
+
+  .btn-get-started{
+    text-align: center;
+  }
+  
+  .hero-grid{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
