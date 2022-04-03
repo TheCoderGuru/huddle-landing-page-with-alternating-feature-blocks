@@ -252,10 +252,6 @@ footer img{
     margin-inline: 3em;
   }
 
-  .btn-get-started{
-    text-align: center;
-  }
-  
   .hero-grid{
     grid-template-columns: repeat(1, 1fr);
   }
