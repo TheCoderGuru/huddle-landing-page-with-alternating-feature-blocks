@@ -69,7 +69,7 @@
 .btn-get-started {
   background-color: var(--pink);
   padding-inline: 3rem;
-  padding-block: 1rem;
+  padding-block: .9rem;
   border-radius: 2rem;
   font-size: 0.8rem;
   font-family: var(--font-os);
@@ -243,16 +243,30 @@ footer img{
   }
 
   .hero__img{
-    height: 28rem;
-    margin-inline: 3em;
+    height: 20rem;
+    margin-inline: 5em;
+    margin-top: 0;
   }
 
   .hero__description{
     text-align: center;
     margin-inline: 3em;
+    line-height: 2em;
+    font-weight: 400;
   }
 
   .hero-grid{
     grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+
+  .btn{
+    display: block;
+    margin-left: 6em;
+    width: fit-content;
+  }
+
+  .grid-container{
+    border: none;
   }
 }
