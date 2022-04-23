@@ -270,4 +270,9 @@ footer img {
   .grid__image {
     margin-bottom: 5em;
   }
+
+  .grid__description{
+    text-align: center;
+    width: 100%;
+  }
 }
