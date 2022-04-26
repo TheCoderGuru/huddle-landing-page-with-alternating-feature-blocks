@@ -105,7 +105,6 @@
 
 .grid-container {
   display: grid;
-  border: 0.1px solid var(--grayish-blue);
   grid-template-columns: repeat(2, 1fr);
   margin: 5em;
   position: relative;
