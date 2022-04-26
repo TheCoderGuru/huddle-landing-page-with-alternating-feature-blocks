@@ -292,7 +292,7 @@ footer {
     margin-block-end: 3rem;
     inline-size: 76%;
     text-align: left;
-    margin-inline-start: 0;
+    padding-inline: 3.5em;
     font-weight: 500;
     color: var(--very-dark-cyan);
     font-family: var(--font-os);
@@ -346,14 +346,14 @@ footer {
 
   .grid-container {
     display: grid;
-    border: 0.1px solid var(--grayish-blue);
     grid-template-columns: repeat(2, 1fr);
     margin: 5em;
     position: relative;
-    block-size: 25vh;
+    block-size: fit-content;
     inline-size: fit-content;
     border-radius: 1em;
   }
+
 
   .grid__image {
     aspect-ratio: 1 / 1;
@@ -389,15 +389,14 @@ footer {
 
   .popup-box {
     background-color: white;
-    box-shadow: 1px 1px 1px 1px black;
     justify-content: center;
     align-items: center;
     inline-size: fit-content;
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    padding: 2.5em;
-    box-shadow: -2px 2px 9px -3px rgba(0, 0, 0, 0.75);
+    padding-inline: 5.5em;
+    padding-block: 2.5em;
   }
 
   .popup-box__title {
