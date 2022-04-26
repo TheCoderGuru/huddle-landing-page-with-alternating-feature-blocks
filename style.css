@@ -163,6 +163,7 @@ body {
   font-family: var(--font-poppins);
   margin-block-end: 2em;
   font-size: 1.2em;
+  color: var(--very-dark-cyan);
 }
 
 footer {
@@ -278,6 +279,7 @@ footer {
     font-family: var(--font-poppins);
     margin-inline-start: 3rem;
     margin-block-start: 5rem;
+    text-align: left;
   }
 
   .hero__heading {
@@ -299,7 +301,7 @@ footer {
   }
 
   .btn {
-    text-align: left;
+    margin: 0;
   }
 
   .btn-get-started {
@@ -308,6 +310,7 @@ footer {
     padding-block: 0.9rem;
     border-radius: 2rem;
     font-size: 0.8rem;
+    margin-inline: 3rem;
     font-family: var(--font-os);
     font-weight: 700;
     color: white;
@@ -328,10 +331,7 @@ footer {
     border-radius: 2rem;
     font-size: 0.8rem;
     background-color: white;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
   }
 
   .hero__img {
@@ -402,6 +402,7 @@ footer {
   .popup-box__title {
     font-family: var(--font-poppins);
     margin-block-end: 2em;
+    color: var();
   }
 
   footer {
@@ -411,8 +412,8 @@ footer {
     padding: 2em;
   }
 
-  footer img {
-    margin-inline-start: 4em;
+  .footer-logo {
+    margin-inline-start: 1em;
   }
   .footer-item {
     display: flex;
