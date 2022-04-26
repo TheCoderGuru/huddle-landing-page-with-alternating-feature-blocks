@@ -141,15 +141,15 @@
 
 .popup-box {
   background-color: white;
-  box-shadow: 1px 1px 1px 1px black;
   justify-content: center;
   align-items: center;
   width: fit-content;
   margin: 0 auto;
   position: relative;
+  border-radius: .8em;
+  bottom: -4rem;
   z-index: 1;
   padding: 4em;
-  box-shadow: -2px 2px 9px -3px rgba(0, 0, 0, 0.75);
 }
 
 .popup-box__title {
