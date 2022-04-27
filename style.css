@@ -20,8 +20,9 @@
   text-decoration: none;
 }
 
-body {
+html, body {
   min-height: 100%;
+  overflow: auto;
 }
 
 .header__container {
@@ -223,7 +224,6 @@ footer {
 .footer-copyright {
   text-align: center;
   color: white;
-  margin-block-end: 3em;
   font-size: 0.9em;
   font-weight: 400;
   font-family: var(--font-os);
