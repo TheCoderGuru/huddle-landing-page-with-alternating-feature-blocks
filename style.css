@@ -163,6 +163,9 @@ footer {
   padding: 2em;
 }
 
+.grid-left{
+  order: -1;
+}
 footer img {
   margin-left: 4em;
 }
