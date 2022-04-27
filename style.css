@@ -140,10 +140,6 @@ body {
   font-family: var(--font-os);
 }
 
-.grid-content {
-  order: 2;
-}
-
 .popup-box {
   background-color: white;
   justify-content: center;
@@ -215,14 +211,13 @@ footer {
   color: white;
   font-family: var(--font-os);
   gap: 1em;
-  margin-block-start: 3em;
   margin-inline-start: 1em;
 }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3em;
+  gap: 1em;
 }
 
 .footer-copyright {
@@ -354,7 +349,6 @@ footer {
     border-radius: 1em;
   }
 
-
   .grid__image {
     aspect-ratio: 1 / 1;
     object-fit: contain;
@@ -371,10 +365,11 @@ footer {
     margin-inline: 2.3em;
   }
 
-  .grid-content {
+  .grid__content {
     order: -1;
     margin-block-start: 4em;
   }
+
   .grid__description {
     margin-block-start: 1em;
     font-family: var(--font-os);
