@@ -20,9 +20,9 @@
   text-decoration: none;
 }
 
-html, body {
+body {
   min-height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .header__container {
