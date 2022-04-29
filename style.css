@@ -23,6 +23,7 @@
 body {
   min-height: 100%;
   overflow-x: hidden;
+  width: --webkit-fill-available;
 }
 
 .header__container {
@@ -362,7 +363,8 @@ footer {
     color: var(--very-dark-cyan);
     font-family: var(--font-poppins);
     text-align: left;
-    margin-inline: 2.3em;
+    margin-inline: 1.5em;
+    font-size: 1.9rem;
   }
 
   .grid__content {
