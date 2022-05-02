@@ -32,10 +32,15 @@ body {
 }
 
 .navbar__logo {
+<<<<<<< HEAD
   margin-block-start: 2em;
   margin-block-start: 2em;
   block-size: 1.3em;
   inline-size: auto;
+=======
+  margin: 2rem 0 0 3rem;
+  height: 1.5rem;
+>>>>>>> development
 }
 
 .hero__heading {
@@ -147,6 +152,8 @@ body {
   align-items: center;
   margin: 0 auto;
   position: relative;
+  border-radius: .8em;
+  bottom: -4rem;
   z-index: 1;
   inline-size: auto;
   bottom: -4rem;
