@@ -25,6 +25,7 @@
 
 body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 .header__container {
@@ -52,6 +53,7 @@ body {
   &__description {
     margin-block: 1rem;
     inline-size: 100%;
+    font-weight: $font-regular;
     padding-inline: 4.1rem;
     color: $very-dark-cyan;
     font-family: $font-os;
@@ -71,7 +73,9 @@ body {
     text-align: center;
     font-family: $font-poppins;
     order: 2;
+    font-weight: 400;
     padding-inline: 2em;
+    // padding-right: 13em;
   }
 }
 
@@ -87,6 +91,7 @@ body {
     padding-block: 0.9rem;
     border-radius: 2rem;
     font-size: 0.8rem;
+    font-weight: $font-regular;
     font-family: $font-os;
     font-weight: 700;
     color: white;
@@ -97,7 +102,7 @@ body {
   }
 
   &-cta {
-    right: 1rem;
+    right: 2rem;
     top: 1.5rem;
     position: absolute;
     font-family: "Open Sans", sans-serif;
@@ -139,6 +144,7 @@ body {
     display: grid;
     inline-size: 1.6;
     line-height: 1.9;
+    font-weight: $font-regular;
     place-content: center;
     color: $grayish-blue;
     font-family: $font-os;
@@ -171,6 +177,7 @@ body {
   background-color: $very-dark-cyan;
   margin-block-start: 2em;
   height: fit-content;
+  font-weight: $font-regular;
   font-family: $font-os;
   color: white;
 
@@ -207,6 +214,7 @@ body {
     display: flex;
     font-size: 1.1em;
     flex-direction: column;
+    font-weight: $font-regular;
     font-family: $font-os;
     gap: 1em;
     margin-inline-start: 1em;
@@ -272,11 +280,14 @@ body {
     }
 
     &__heading {
-      inline-size: 56%;
+      // inline-size: 56%;
       color: $very-dark-cyan;
-      font-weight: 700;
+      font-weight: 500;
       text-align: left;
+      line-height: 1.5;
+      font-family: $font-poppins;
       margin-block-end: 1.5rem;
+      padding-right: 13em;
     }
 
     &__description {
@@ -327,16 +338,19 @@ body {
     block-size: 32rem;
   }
 
+  .centered{
+    display: grid;
+    place-items: center;
+  }
+
   .grid {
     padding: 3em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 6em;
     position: relative;
-    block-size: fit-content;
-    inline-size: fit-content;
+    margin: 6rem;
+    max-width: 65%;
     gap: 5em;
-    border-radius: 1em;
 
     &__image {
       aspect-ratio: 1 / 1;
@@ -362,10 +376,11 @@ body {
 
     &__content {
       order: -1;
+      margin-block: 5em;
     }
   }
 
-  .grid:nth-child(even) {
+  .centered:nth-child(even) {
     .grid__image {
       order: 2;
     }
