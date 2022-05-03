@@ -67,7 +67,8 @@ body {
   }
 
   &__heading {
-    font-size: 1.7rem;
+    // font-size: 1.7rem;
+    font-size: clamp(1.7rem, 4vw, 1.8rem);
     inline-size: 100%;
     margin-block-start: 2em;
     text-align: center;
@@ -285,9 +286,10 @@ body {
       font-weight: 500;
       text-align: left;
       line-height: 1.5;
+      font-size: 1.8rem;
       font-family: $font-poppins;
       margin-block-end: 1.5rem;
-      padding-right: 13em;
+      padding-right: 12em;
     }
 
     &__description {
@@ -338,7 +340,7 @@ body {
     block-size: 32rem;
   }
 
-  .centered{
+  .centered {
     display: grid;
     place-items: center;
   }
@@ -476,7 +478,7 @@ body {
       padding: 0.3em;
     }
 
-    &-logo{
+    &-logo {
       margin-block-start: 1em;
     }
   }

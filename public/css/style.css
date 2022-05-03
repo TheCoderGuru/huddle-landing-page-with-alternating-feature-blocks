@@ -48,7 +48,7 @@ body {
   margin: 4rem auto;
 }
 .hero__heading {
-  font-size: 1.7rem;
+  font-size: clamp(1.7rem, 4vw, 1.8rem);
   inline-size: 100%;
   margin-block-start: 2em;
   text-align: center;
@@ -80,7 +80,7 @@ body {
 }
 .btn-cta {
   right: 2rem;
-  top: 2rem;
+  top: 1.5rem;
   position: absolute;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -211,7 +211,6 @@ body {
 }
 
 /* Desktop Version */
-
 @media screen and (min-width: 1024px) {
   .header__container {
     background-color: hsl(193deg, 100%, 96%);
@@ -223,7 +222,7 @@ body {
     position: relative;
   }
   .navbar__logo {
-    margin: 3rem 0 0 7rem;
+    margin: 2rem 0 0 3rem;
     block-size: 1.5rem;
   }
 
@@ -243,17 +242,17 @@ body {
     color: hsl(192deg, 100%, 9%);
     font-weight: 500;
     text-align: left;
-    font-size: 2em;
     line-height: 1.5;
+    font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
     margin-block-end: 1.5rem;
-    padding-right: 11em;
+    padding-right: 12em;
   }
   .hero__description {
     margin-block-end: 2em;
     inline-size: 76%;
     text-align: left;
-    padding-inline: 4em;
+    padding-inline: 3.5em;
     font-weight: 500;
     color: hsl(192deg, 100%, 9%);
     font-family: "Open Sans", sans-serif;
@@ -262,10 +261,10 @@ body {
   .btn-get-started {
     background-color: hsl(322deg, 100%, 66%);
     padding-inline: 3rem;
-    padding-block: 1rem;
+    padding-block: 0.9rem;
     border-radius: 2rem;
-    font-size: 0.8rem;
-    margin-inline: 4rem;
+    font-size: 0.9rem;
+    margin-inline: 3rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     color: white;
