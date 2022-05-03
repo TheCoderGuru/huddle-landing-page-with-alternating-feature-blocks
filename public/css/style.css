@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.header__container {
+  background-color: hsl(193deg, 100%, 96%);
+  z-index: -1;
+  background-image: url(./assets/images/bg-hero-desktop.svg);
+}
+
+.navbar__logo {
+  margin-block-start: 2em;
+  margin-inline-start: 2em;
+  block-size: 1.3em;
+  inline-size: auto;
+}
+
+.hero {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+}
+.hero__content {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.hero__description {
+  margin-block: 1rem;
+  inline-size: 100%;
+  font-weight: 400;
+  padding-inline: 4.1rem;
+  color: hsl(192deg, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+}
+.hero__img {
+  block-size: 16rem;
+  display: grid;
+  place-items: center;
+  margin: 4rem auto;
+}
+.hero__heading {
+  font-size: 1.7rem;
+  inline-size: 100%;
+  margin-block-start: 2em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  order: 2;
+  font-weight: 400;
+  padding-inline: 2em;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  inline-size: fit-content;
+}
+.btn-get-started {
+  background-color: hsl(322deg, 100%, 66%);
+  padding-inline: 3rem;
+  padding-block: 0.9rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.btn-get-started:nth-child(2) {
+  margin-block-end: 2.5em;
+}
+.btn-cta {
+  right: 2rem;
+  top: 1.5rem;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(192deg, 100%, 9%);
+  box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  background-color: white;
+  padding-inline: 3rem;
+  padding-block: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.grid__image {
+  margin: 0 auto;
+  block-size: 10em;
+  display: grid;
+  place-items: center;
+  margin-block-end: 4em;
+}
+.grid__title {
+  color: hsl(192deg, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+}
+.grid__description {
+  text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 8em;
+  padding-inline: 3em;
+  display: grid;
+  inline-size: 1.6;
+  line-height: 1.9;
+  font-weight: 400;
+  place-content: center;
+  color: hsl(208deg, 11%, 55%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.popup-box {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  inline-size: auto;
+  bottom: -4rem;
+  padding: 1em;
+  font-weight: 500;
+  margin-inline: 1em;
+  border-radius: 0.7rem;
+}
+.popup-box__title {
+  font-family: "Poppins", sans-serif;
+  margin-block-end: 2em;
+  font-size: 1.2em;
+  color: hsl(192deg, 100%, 9%);
+}
+
+.footer {
+  background-color: hsl(192deg, 100%, 9%);
+  margin-block-start: 2em;
+  height: fit-content;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.footer-logo {
+  margin-inline-start: 1em;
+  margin-block-start: 5em;
+  margin-block-end: 2em;
+  block-size: 1.6em;
+  inline-size: auto;
+}
+.footer-item {
+  display: flex;
+  margin-inline-start: 1em;
+  gap: 1em;
+  margin-block-end: 2em;
+}
+.footer-item__paragraph {
+  inline-size: 69%;
+  margin-block-end: 1em;
+  font-size: 0.9em;
+}
+.footer-item__number {
+  margin-block-end: 1em;
+}
+.footer-item__email {
+  vertical-align: middle;
+}
+.footer__links {
+  display: flex;
+  font-size: 1.1em;
+  flex-direction: column;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  gap: 1em;
+  margin-inline-start: 1em;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+.footer__social-media {
+  text-align: center;
+  margin-block-end: 1em;
+}
+.footer__social-media ion-icon {
+  border: 1px solid;
+  color: white;
+  margin-inline-end: 0.5em;
+  opacity: 0.7;
+  border-radius: 50%;
+  padding: 0.3em;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 1024px) {
+  .header__container {
+    background-color: hsl(193deg, 100%, 96%);
+    z-index: -1;
+    background-image: url(./assets/images/bg-hero-desktop.svg);
+  }
+
+  .navbar {
+    position: relative;
+  }
+  .navbar__logo {
+    margin: 2rem 0 0 3rem;
+    block-size: 1.5rem;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15rem;
+    position: relative;
+  }
+  .hero__content {
+    font-family: "Poppins", sans-serif;
+    margin-inline-start: 3rem;
+    margin-block-start: 5rem;
+    text-align: left;
+  }
+  .hero__heading {
+    color: hsl(192deg, 100%, 9%);
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    margin-block-end: 1.5rem;
+    padding-right: 15em;
+  }
+  .hero__description {
+    margin-block-end: 2em;
+    inline-size: 76%;
+    text-align: left;
+    padding-inline: 3.5em;
+    font-weight: 500;
+    color: hsl(192deg, 100%, 9%);
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .btn-get-started {
+    background-color: hsl(322deg, 100%, 66%);
+    padding-inline: 3rem;
+    padding-block: 0.9rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    margin-inline: 3rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+  .btn-get-started:nth-child(2) {
+    margin-block-end: 0;
+    margin-inline-start: 7em;
+  }
+  .btn-get-started-cta {
+    right: 3rem;
+    top: 1.5rem;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: hsl(192deg, 100%, 9%);
+    box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    background-color: white;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+
+  .hero__img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    block-size: 32rem;
+  }
+
+  .centered {
+    display: grid;
+    place-items: center;
+  }
+
+  .grid {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin: 6rem;
+    max-width: 65%;
+    gap: 5em;
+  }
+  .grid__image {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    block-size: 18rem;
+    top: 0;
+    right: 5em;
+  }
+  .grid__title {
+    color: hsl(192deg, 100%, 9%);
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    margin-inline: 1.5em;
+    font-size: 1.9rem;
+  }
+  .grid__description {
+    margin-block-start: 1em;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+  }
+  .grid__content {
+    order: -1;
+    margin-block: 5em;
+  }
+
+  .centered:nth-child(even) .grid__image {
+    order: 2;
+  }
+  .centered:nth-child(even) .grid__content {
+    order: 1;
+  }
+
+  .popup-box {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    inline-size: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-inline: 5.5em;
+    padding-block: 2.5em;
+  }
+  .popup-box__title {
+    font-family: "Poppins", sans-serif;
+    margin-block-end: 2em;
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    background-color: hsl(192deg, 100%, 9%);
+    position: absolute;
+    z-index: -1;
+    padding: 2em;
+  }
+  .footer-logo {
+    margin-inline-start: 1em;
+  }
+  .footer-item {
+    display: flex;
+    margin-inline-start: 1em;
+    gap: 1em;
+    margin-block-end: 2em;
+  }
+  .footer-item__paragraph {
+    inline-size: 89%;
+    margin-block-end: 1em;
+    color: white;
+  }
+  .footer-item__number {
+    margin-block-end: 1em;
+  }
+  .footer-item__email {
+    vertical-align: middle;
+  }
+  .footer__links {
+    display: flex;
+    font-size: 1.1em;
+    flex-direction: column;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    gap: 1em;
+    margin-block-start: 4em;
+  }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+  }
+  .footer__copyright {
+    text-align: right;
+    color: white;
+    font-weight: 400;
+    margin-inline-end: 4em;
+    font-family: "Open Sans", sans-serif;
+  }
+  .footer__social-media {
+    margin-block-start: 4.3em;
+  }
+  .footer__social-media ion-icon {
+    border: 1px solid currentColor;
+    color: white;
+    margin-inline-end: 2em;
+    opacity: 0.7;
+    border-radius: 50%;
+    padding: 0.3em;
+  }
+  .footer-logo {
+    margin-block-start: 1em;
+  }
+}

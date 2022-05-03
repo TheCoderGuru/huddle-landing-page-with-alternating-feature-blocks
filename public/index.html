@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,8 +20,6 @@
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <header class="header__container">
@@ -33,7 +31,7 @@
         />
         <a class="btn btn-cta" href="#">Try it Free</a>
       </nav>
-      <div class="hero-grid">
+      <div class="hero">
         <div class="hero__content">
           <h1 class="hero__heading">Build The Community Your Fans Will Love</h1>
           <p class="hero__description">
@@ -53,55 +51,61 @@
       </div>
     </header>
     <main>
-      <div class="grid-container">
-        <div class="grid__content">
-          <h1 class="grid__title">Grow Together</h1>
-          <p class="grid__description">
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
-        <div>
-          <img
-            class="grid__image"
-            src="./assets/images/illustration-grow-together.svg"
-            alt="A man and woman collaborating on a project"
-          />
-        </div>
-      </div>
-      <div class="grid-container">
-        <div class="grid__content">
-          <h1 class="grid__title">Flowing Conversations</h1>
-          <p class="grid__description">
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
-        </div>
-        <div>
-          <img
-            class="grid__image"
-            src="./assets/images/illustration-flowing-conversation.svg"
-            alt="A group of people sitting at a table chatting"
-          />
+      <div class="centered">
+        <div class="grid">
+          <div class="grid__content">
+            <h1 class="grid__title">Grow Together</h1>
+            <p class="grid__description">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <div>
+            <img
+              class="grid__image"
+              src="./assets/images/illustration-grow-together.svg"
+              alt="A man and woman collaborating on a project"
+            />
+          </div>
         </div>
       </div>
-      <div class="grid-container">
-        <div class="grid__content">
-          <h1 class="grid__title">Your Users</h1>
-          <p class="grid__description">
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+      <div class="centered">
+        <div class="grid">
+          <div class="grid__content">
+            <h1 class="grid__title">Flowing Conversations</h1>
+            <p class="grid__description">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <div>
+            <img
+              class="grid__image"
+              src="./assets/images/illustration-flowing-conversation.svg"
+              alt="A group of people sitting at a table chatting"
+            />
+          </div>
         </div>
-        <div class="grid-below">
-          <img
-            class="grid__image"
-            src="./assets/images/illustration-your-users.svg"
-            alt="A group of three people sharing ideas"
-          />
+      </div>
+      <div class="centered">
+        <div class="grid">
+          <div class="grid__content">
+            <h1 class="grid__title">Your Users</h1>
+            <p class="grid__description">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div>
+            <img
+              class="grid__image"
+              src="./assets/images/illustration-your-users.svg"
+              alt="A group of three people sharing ideas"
+            />
+          </div>
         </div>
       </div>
       <div class="popup-container">
@@ -111,13 +115,20 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__grid">
         <div>
-          <img class="footer-logo" src="./assets/images/logo.svg" alt="website logo for huddle landing page" />
+          <img
+            class="footer-logo"
+            src="./assets/images/logo.svg"
+            alt="website logo for huddle landing page"
+          />
           <div class="footer-item">
             <div>
-              <img src="./assets/images/icon-location.svg" alt="location icon"/>
+              <img
+                src="./assets/images/icon-location.svg"
+                alt="location icon"
+              />
             </div>
             <div>
               <p class="footer-item-paragraph">
@@ -129,7 +140,7 @@
 
           <div class="footer-item">
             <div>
-              <img src="./assets/images/icon-phone.svg" alt="phone icon"/>
+              <img src="./assets/images/icon-phone.svg" alt="phone icon" />
             </div>
             <div>
               <p class="footer-item-number">+1-543-123-4567</p>
@@ -138,7 +149,7 @@
 
           <div class="footer-item">
             <div>
-              <img src="./assets/images/icon-email.svg" alt="email icon"/>
+              <img src="./assets/images/icon-email.svg" alt="email icon" />
             </div>
             <div>
               <p class="footer-item-email">example@huddle.com</p>
@@ -151,7 +162,7 @@
           <small>FAQ</small>
         </div>
         <div class="footer__links">
-          <small>Career</small>
+          <small name="career">Career</small>
           <small>Blog</small>
           <small>Contact Us</small>
         </div>
@@ -161,7 +172,7 @@
           <ion-icon name="logo-instagram"></ion-icon>
         </div>
       </div>
-      <p class="footer-copyright">
+      <p class="footer__copyright">
         &copy; Copyright 2018 Huddle. All rights reserved.
       </p>
     </footer>
